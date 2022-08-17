@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import HeaderOne from "./components/HeaderOne";
+import HeaderTwo from "./components/HeaderTwo";
 
 function App() {
+  const userName = "KIET";
+  const dept = "MCA";
+  const displayMsg = (msg) => {
+    console.log("You ", msg);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <HeaderOne
+        user={userName}
+        dept={dept}
+        clicked={() => displayMsg("Clicked...")}
+      />
+      <HeaderTwo
+        user={userName}
+        dept={dept}
+        clicked={() => displayMsg("Clicked...")}
+      />
     </div>
   );
 }
