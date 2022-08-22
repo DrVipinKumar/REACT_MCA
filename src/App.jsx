@@ -1,9 +1,8 @@
-import HomeCounter from "./components/HomeCounter";
-
+import HookHomeCounter from "./components/HookHomeCounter";
 function App() {
   return (
     <div>
-      <HomeCounter />
+      <HookHomeCounter />
     </div>
   );
 }
