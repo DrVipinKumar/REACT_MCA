@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-const ChangeColorHOC = (NormalComponent) => {
+const ChangeColorHOC = (NormalComponent) => (props) => {
   class EnhanceComponent extends Component {
     state = { color: "#000000" };
     changeColor = () => {
@@ -13,6 +13,7 @@ const ChangeColorHOC = (NormalComponent) => {
       return (
         <div>
           <NormalComponent
+            name={props.name}
             color={this.state.color}
             changeColor={this.changeColor}
           />
@@ -21,7 +22,7 @@ const ChangeColorHOC = (NormalComponent) => {
     }
   }
 
-  return EnhanceComponent;
+  return <EnhanceComponent {...props} />;
 };
 
 export default ChangeColorHOC;

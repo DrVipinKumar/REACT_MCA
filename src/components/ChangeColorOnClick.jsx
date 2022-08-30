@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { Name } from "./contextname";
 import ChangeColorHOC from "./ChangeColorHOC";
+import { Name } from "./contextname";
 class ChangeColorOnClick extends Component {
   render() {
     return (

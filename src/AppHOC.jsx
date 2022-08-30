@@ -4,10 +4,10 @@ import { Name } from "./components/contextname";
 function App() {
   return (
     <div className="text-center">
-      <Name.Provider value="MCA React Context">
+      <Name.Provider value="Dr. Vipin Kumar">
         <ChangeColorOnClick />
-        <ChangeColorOnHover />
       </Name.Provider>
+      <ChangeColorOnHover name="Dr. Sachin Kumar" />
     </div>
   );
 }

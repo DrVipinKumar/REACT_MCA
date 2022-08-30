@@ -8,7 +8,7 @@ class ChangeColorOnHover extends Component {
           onMouseOver={this.props.changeColor}
           style={{ color: this.props.color }}
         >
-          MCA React Program
+          {this.props.name}
         </h2>
       </div>
     );
